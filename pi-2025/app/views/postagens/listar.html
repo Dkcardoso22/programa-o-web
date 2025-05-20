@@ -1,0 +1,12 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<ul>
+#{list items:lista,as: 'p'}
+
+<li>${p.titulo} ${p.conteudo} ${p.autor} ${p.data}  | 
+
+<a href = "@{postagens.remover(p.id)}">remover </a>
+<a></a>
+#{/list}
+</ul>

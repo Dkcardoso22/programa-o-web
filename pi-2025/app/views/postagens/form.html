@@ -1,0 +1,18 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<form action="/postagens/salvar">
+    <label for="titulo">titulo</label><br>
+    <input type="text" name="p.titulo" ><br><br>
+
+    <label for="">conteudo</label><br>
+    <input type="text"  name="p.conteudo" ><br><br>
+    
+     <label for="">autor</label><br>
+    <input type="text" name="p.autor" ><br><br>
+    
+     <label for="">data</label><br>
+    <input type="Date" name="p.data" ><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
